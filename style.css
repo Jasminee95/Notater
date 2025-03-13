@@ -1,0 +1,135 @@
+body {
+  text-align: center;
+  background: linear-gradient(to left, rgb(254, 159, 230), rgb(226, 162, 255));
+  color: rgb(85, 0, 255);
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+p {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+#btn {
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(to top, rgb(254, 159, 230), rgb(226, 162, 255));
+  color: rgb(148, 148, 148);
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+  vertical-align: middle;
+  padding: 10px 15px;
+  position: relative;
+  top: -70px;
+  right: -30px;
+}
+
+#notesArea {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+  clear: both;
+}
+
+#btn:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#heading {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 35px;
+}
+
+#heading {
+  font-size: 60px;
+  font-weight: 900;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(to right, #ff00cc, #3333ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+#infoText {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(to right, #cc5dff, hsl(251, 100%, 67%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+#writeNote {
+  background: linear-gradient(to top, rgb(254, 159, 230), rgb(226, 162, 255));
+  border-radius: 8px;
+  border: none;
+  height: 100px;
+  width: 300px;
+  resize: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: fantasy;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+  flex: 1;
+}
+
+.noteBox {
+  background: linear-gradient(to top, rgb(254, 159, 230), rgb(226, 162, 255));
+  border-radius: 8px;
+  height: auto;
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #333;
+  resize: none;
+  font-family: fantasy;
+  font-size: large;
+  text-align: center;
+  color: rgb(116, 123, 134);
+}
+
+.inputArea {
+  display: center;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+textarea:focus {
+  outline: none;
+  border: 2px solid #f69ddc;
+  box-shadow: 0 0 10px rgba(246, 157, 220, 0.4);
+  transition: 0.3s ease;
+}
