@@ -20,7 +20,7 @@ function updateView(){
     <h1 id="heading">Note App</h1>
     <h2 id="infoText">Double click on a note to remove it</h2>
     <div class="inputArea">
-    <textarea id="writeNote" placeholder="Empty Note"></textarea>
+    <textarea id="writeNote" placeholder="Write something"></textarea>
     <button id="btn" onclick="addNote()">+</button>
       <div id="notesArea">
       ${noteHtml}
